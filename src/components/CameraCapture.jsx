@@ -6,9 +6,13 @@ export default function CameraCapture({ onImageCaptured }) {
   const [isCameraActive, setIsCameraActive] = useState(false);
 
   const startCamera = async () => {
-    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-    videoRef.current.srcObject = stream;
-    setIsCameraActive(true);
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      videoRef.current.srcObject = stream;
+      setIsCameraActive(true);
+    } catch (err) {
+      alert('Erro ao acessar câmera');
+    }
   };
 
   const capturePhoto = () => {
