@@ -2,12 +2,12 @@ import React from 'react';
 import QRCode from 'qrcode.react';
 
 export default function WhatsAppQRCode({ phoneNumber }) {
-  const whatsappLink = https://wa.me/ ;
+  const whatsappLink = `https://wa.me/ ${phoneNumber.replace(/\D/g, '')}`;
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h3>?? Escaneie para Contatar</h3>
+      <h3>ðŸ“± Escaneie para entrar em contato</h3>
       <QRCode value={whatsappLink} size={200} />
-      <p>Código gerado com base no número: {phoneNumber}</p>
+      <p>CÃ³digo gerado automaticamente</p>
     </div>
   );
 }
