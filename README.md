@@ -1,0 +1,1 @@
+# Flashify v9.1 - SaaS Completo\n\nPlataforma completa de criação de anúncios visuais com inteligência artificial, legendas atrativas, templates profissionais, painel analítico, WhatsApp QR Code, Pix como método de cobrança (dgosp13@gmail.com) e muito mais.
