@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CameraCapture from '../components/CameraCapture';
 import WhatsAppQRCode from '../components/WhatsAppQRCode';
 import CaptionGenerator from '../components/CaptionGenerator';
+import TemplateSelector from '../components/TemplateSelector';
 
 export default function InstagramToolsPage() {
   const [capturedImage, setCapturedImage] = useState(null);
@@ -11,14 +12,15 @@ export default function InstagramToolsPage() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div>
       <h2>📷 Crie seu Anúncio</h2>
 
       <CameraCapture onImageCaptured={handleImageCaptured} />
 
       {capturedImage && (
         <>
-          <img src={capturedImage} alt="Prévia" width="200" />
+          <AdEditor imageUrl={capturedImage} />
+          <TemplateSelector />
           <CaptionGenerator productType="produtos aleatórios" />
           <WhatsAppQRCode phoneNumber="5511999999999" />
         </>
