@@ -21,7 +21,7 @@ export default function Login() {
 
   return (
     <div style={{ padding: '40px' }}>
-      <h1>🔐 Entrar</h1>
+      <h1>🔐 Login - Flashify</h1>
       <input placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
       <br /><br />
       <input type="password" placeholder="Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
