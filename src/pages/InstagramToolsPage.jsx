@@ -3,6 +3,7 @@ import CameraCapture from '../components/CameraCapture';
 import WhatsAppQRCode from '../components/WhatsAppQRCode';
 import CaptionGenerator from '../components/CaptionGenerator';
 import TemplateSelector from '../components/TemplateSelector';
+import AdEditor from '../components/AdEditor';
 
 export default function InstagramToolsPage() {
   const [capturedImage, setCapturedImage] = useState(null);
@@ -12,7 +13,7 @@ export default function InstagramToolsPage() {
   };
 
   return (
-    <div>
+    <div style={{ padding: '20px' }}>
       <h2>📷 Crie seu Anúncio</h2>
 
       <CameraCapture onImageCaptured={handleImageCaptured} />
@@ -20,7 +21,7 @@ export default function InstagramToolsPage() {
       {capturedImage && (
         <>
           <AdEditor imageUrl={capturedImage} />
-          <TemplateSelector />
+          <TemplateSelector onSelect={(template) => console.log('Template selecionado:', template)} />
           <CaptionGenerator productType="produtos aleatórios" />
           <WhatsAppQRCode phoneNumber="5511999999999" />
         </>
