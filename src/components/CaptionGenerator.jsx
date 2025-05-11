@@ -5,17 +5,17 @@ export default function CaptionGenerator({ productType }) {
 
   const generate = () => {
     const captions = {
-      camiseta: "Aproveite nossa nova coleção 😍 #moda #promoção",
-      eletronicos: "🔥 Novos produtos na área – frete grátis!",
-      ofertas: "🎉 Oferta especial do dia – compre agora!"
+      camiseta: "🎉 Nova coleção chegou! #moda #oferta",
+      eletronicos: "🔥 Oferta imperdível – frete grátis!",
+      ofertas: "🎁 Confira nossos descontos do dia!"
     };
 
-    setCaption(captions[productType] || "Nova oferta imperdível 🎁");
+    setCaption(captions[productType] || "Nova oferta especial!");
   };
 
   return (
     <div style={{ margin: '20px 0' }}>
-      <h3>✍️ Gere uma legenda</h3>
+      <h3>✍️ Legenda para Instagram</h3>
       <button onClick={generate}>Gerar Legenda</button>
       {caption && <p>{caption}</p>}
     </div>
