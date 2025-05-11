@@ -1,1 +1,10 @@
-# Flashify v9.1 - SaaS Completo\n\nPlataforma completa de criação de anúncios visuais com inteligência artificial, legendas atrativas, templates profissionais, painel analítico, WhatsApp QR Code, Pix como método de cobrança (dgosp13@gmail.com) e muito mais.
+# Flashify v9.2 â€“ SaaS Completo de AnÃºncios Visuais com IA
+
+Plataforma completa de criaÃ§Ã£o de anÃºncios visuais com inteligÃªncia artificial, legendas atrativas, QR Code para WhatsApp, agendamento de posts, templates profissionais, painel analÃ­tico, sistema de crÃ©ditos diÃ¡rios e cobranÃ§a via Pix (`dgosp13@gmail.com`).
+
+## ğŸš€ Como Rodar Localmente
+
+1. Clone o repositÃ³rio:
+   ```bash
+   git clone https://github.com/diegosp13/flashify-saas.git 
+   cd flashify-saas
