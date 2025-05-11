@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 export default function CameraCapture({ onImageCaptured }) {
   const videoRef = useRef(null);
